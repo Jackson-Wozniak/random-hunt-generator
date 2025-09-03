@@ -19,6 +19,7 @@ export enum SpeciesName {
     MOUNTAIN_GOAT = "Mountain Goat",
     SPRINGBOK = "Springbok",
     WOOD_BISON = "Wood Bison",
+    LION = "Lion",
 
     GOLDEN_JACKAL = "Golden Jackal",
     GRAY_WOLF = "Gray Wolf",
@@ -54,6 +55,18 @@ export enum SpeciesName {
     KODIAK_BEAR = "Kodiak Bear"
 }
 
+export enum Family {
+    ANATIDAE = "Anatidae",
+    BOVIDAE = "Bovidae",
+    CANIDAE = "Canidae",
+    CERVIDAE = "Cervidae",
+    LEPORIDAE = "Leporidae",
+    MUSTELIDAE = "Mustelidae",
+    PHASIANIDAE = "Phasianidae",
+    SUIDAE = "Suidae",
+    URSIDAE = "Ursidae",
+}
+
 export enum AnimalAge {
     YOUNG = "Young",
     ADULT = "Adult",
@@ -68,8 +81,7 @@ export enum AnimalSex {
 export enum AnimalAction {
     SLEEP = "Sleep",
     FEED = "Feed",
-    DRINK = "Drink",
-    REST = "Rest"
+    DRINK = "Drink"
 }
 
 export interface AnimalWeight {
@@ -84,6 +96,6 @@ export interface Species {
     primaryHabitats: Biome[],
     secondaryHabitats: Biome[]
     huntingTier: number,
-    pricePerKg: number,
-    weightRanges: AnimalWeight[]
+    weightRanges: AnimalWeight[],
+    lifeCycle: Map<AnimalAction, string[]>
 }

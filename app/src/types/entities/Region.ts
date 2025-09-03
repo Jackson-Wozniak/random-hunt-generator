@@ -5,7 +5,12 @@ export enum Biome {
     SWAMPS = "Swamps",
     MOUNTAINS = "Mountains",
     GRASSLAND = "Grassland",
-    LOWLAND_FOREST = "Lowland Forest"
+    LOWLAND_FOREST = "Lowland Forest",
+    HIGHLANDS = "Highlands",
+    SAVANNA = "Savanna",
+    ARID_SAVANNA_AND_DESERT = "Arid Savanna and Desert",
+    GRASSLANDS_AND_FORESTS = "Grasslands and Forests",
+    FLOODPLAIN = "Floodplain"
 }
 
 export interface Region {
