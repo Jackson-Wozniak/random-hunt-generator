@@ -1,10 +1,8 @@
-import './App.css'
+import AppInitializer from "./AppInitializer";
 
 function App() {
-
   return (
-    <>
-    </>
+    <AppInitializer/>
   )
 }
 
