@@ -2,19 +2,18 @@ import { useTheme } from "@mui/material/styles";
 import ContentContainer from "../Shared/ContentContainer";
 import './temp.css';
 import Box from "@mui/material/Box";
-import { CenteredFullWindow } from "../../theme/Shared";
-import HuntSettingsWindow from "./HuntSettingsWindow";
+import HuntInputDisplay from "./display/HuntInputDisplay";
 
-const WayOfTheHunterPage: React.FC<{}> = ({}) => {
+const HunteGeneratorPage: React.FC<{}> = ({}) => {
     const theme = useTheme();
 
     return (
         <ContentContainer>
             <Box className="App">
-                <HuntSettingsWindow/>
+                <HuntInputDisplay/>
             </Box>
         </ContentContainer>
     )
 }
 
-export default WayOfTheHunterPage;
+export default HunteGeneratorPage;
