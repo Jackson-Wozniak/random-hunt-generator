@@ -65,7 +65,7 @@ const HuntDisplay: React.FC<{}> = ({}) => {
 
     return (
         <Box sx={FormStyling}>
-            <InputDisplay/>
+            <InputDisplay handleSubmit={handleInput}/>
         </Box>
     )
 }
