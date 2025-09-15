@@ -18,4 +18,8 @@ declare module '@mui/material/styles' {
         width?: number;
         height?: number;
     }
+    interface TypeText {
+        darker: string,
+        accent: string
+    }
 }

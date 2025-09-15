@@ -20,8 +20,10 @@ export const AppTheme = (displayType: 'desktop' | 'mobile' = 'desktop',
             accent: "grey"
         },
         text: {
-            primary: "#000000",
-            secondary: "#3d3d3d"
+            primary: "#ffffffff",
+            secondary: "#e3e2e2ff",
+            darker: "#515151ff",
+            accent: "#979797ff"
         }
     },
     display: displayType,

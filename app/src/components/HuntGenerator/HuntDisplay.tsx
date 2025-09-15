@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Typography, useTheme } from "@mui/material";
+import { Box, CircularProgress, Dialog, DialogContent, DialogTitle, Paper, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
 import { toHuntContextParams, type HuntParametersState } from "./hunt/HuntParametersDispatch";
 import { generateHunt } from "../../engine/HuntEngine";
@@ -7,20 +7,10 @@ import InputDisplay from "./hunt/InputDisplay";
 import OutputDisplay from "./hunt/OutputDisplay";
 
 const FormStyling = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    fontFamily: "'Open Sans', sans-serif",
-    color: "rgb(14, 14, 14)",
-    padding : "0px 30px 10px 30px",
-    borderRadius: "5px",
-    backgroundColor: "rgba(255,255,255,.1)",
-    border: "1px solid rgba(255,255,255,.1)",
-    backdropFilter: "blur(10px)",
-    zIndex: "1000",
-    width: "50%",
-    height: "80%"
+    display: "flex", justifyContent: "center", alignItems: "center",
+    fontFamily: "'Open Sans', sans-serif", color: "rgb(14, 14, 14)",
+    padding : "0px 30px 10px 30px", borderRadius: "5px", backdropFilter: "blur(10px)",
+    backgroundColor: "rgba(166, 166, 166, 0.2)", border: "1px solid rgba(147, 147, 147, 0.2)"
 }
 
 enum FormMode {
@@ -64,9 +54,12 @@ const HuntDisplay: React.FC<{}> = ({}) => {
     }
 
     return (
-        <Box sx={FormStyling}>
-            <InputDisplay handleSubmit={handleInput}/>
-        </Box>
+        <Dialog fullWidth={true} maxWidth={"sm"} open={true} slotProps={{paper: {style: FormStyling}}}>
+            <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Generate New Hunt</DialogTitle>
+            <DialogContent sx={{ pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
+                <InputDisplay handleSubmit={handleInput}/>
+            </DialogContent>
+        </Dialog>
     )
 }
 
