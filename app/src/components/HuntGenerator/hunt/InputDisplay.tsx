@@ -86,7 +86,7 @@ const InputDisplay: React.FC<{handleSubmit: (state: HuntParametersState) => void
                     </FormControl>
                 </FormGroup>
             </Box>
-            <Box height="10%" width="100%" display="flex" alignItems="center" justifyContent="center">
+            <Box height="10%" width="100%" display="flex" alignItems="center" justifyContent="center" mt="25px">
                 <Button variant="contained" onClick={handleCreate}
                     endIcon={<DoubleArrowIcon/>}>Create Hunt</Button>
             </Box>

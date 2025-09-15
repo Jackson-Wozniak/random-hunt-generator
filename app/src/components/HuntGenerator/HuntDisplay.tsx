@@ -1,10 +1,11 @@
 import { Box, CircularProgress, Dialog, DialogContent, DialogTitle, Paper, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
-import { toHuntContextParams, type HuntParametersState } from "./hunt/HuntParametersDispatch";
+import type { HuntParametersState } from "./hunt/HuntParametersDispatch";
 import { generateHunt } from "../../engine/HuntEngine";
 import type { Hunt } from "../../types/HuntTypes";
 import InputDisplay from "./hunt/InputDisplay";
 import OutputDisplay from "./hunt/OutputDisplay";
+import { MapName } from "../../types/entities/Map";
 
 const FormStyling = {
     display: "flex", justifyContent: "center", alignItems: "center",
@@ -19,18 +20,18 @@ enum FormMode {
     DISPLAY_HUNT = "Display Hunt"
 }
 
-const HuntDisplay: React.FC<{}> = ({}) => {
+const HuntDisplay: React.FC<{setBackgroundUrl: (b: MapName) => void}> = ({setBackgroundUrl}) => {
     const theme = useTheme();
 
     const [formMode, setFormMode] = useState<FormMode>(FormMode.INPUT_PARAMS);
     const [generatedHunt, setGeneratedHunt] = useState<Hunt | undefined>();
 
-    function handleInput(parametersState: HuntParametersState){
+    function handleInput(parameters: HuntParametersState){
         setFormMode(FormMode.GENERATING);
 
-        const parameters = toHuntContextParams(parametersState);
-
         const generatedHunt = generateHunt(parameters);
+
+        setBackgroundUrl(generatedHunt.map.name);
 
         setGeneratedHunt(generatedHunt);
         setFormMode(FormMode.DISPLAY_HUNT);
@@ -47,9 +48,12 @@ const HuntDisplay: React.FC<{}> = ({}) => {
 
     if(formMode == FormMode.DISPLAY_HUNT && generatedHunt != undefined){
         return (
-            <Box sx={FormStyling}>
-                <OutputDisplay hunt={generatedHunt}/>
-            </Box>
+            <Dialog fullWidth={true} maxWidth={"sm"} open={true} slotProps={{paper: {style: FormStyling}}}>
+                <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Assigned Hunt</DialogTitle>
+                <DialogContent sx={{ pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
+                    <OutputDisplay hunt={generatedHunt}/>
+                </DialogContent>
+            </Dialog>
         )
     }
 
