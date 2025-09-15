@@ -2,7 +2,7 @@ import { useTheme } from "@mui/material/styles";
 import ContentContainer from "../Shared/ContentContainer";
 import './temp.css';
 import Box from "@mui/material/Box";
-import HuntInputDisplay from "./display/HuntInputDisplay";
+import HuntDisplay from "./HuntDisplay";
 
 const HunteGeneratorPage: React.FC<{}> = ({}) => {
     const theme = useTheme();
@@ -10,7 +10,7 @@ const HunteGeneratorPage: React.FC<{}> = ({}) => {
     return (
         <ContentContainer>
             <Box className="App">
-                <HuntInputDisplay/>
+                <HuntDisplay/>
             </Box>
         </ContentContainer>
     )
