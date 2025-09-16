@@ -14,16 +14,10 @@ export interface HuntParametersState {
 }
 
 export const InitialHuntParametersState: HuntParametersState = {
-    huntType: HuntType.SIMPLE,
+    huntType: HuntType.STORY_BASED,
     includeDLC: false,
     includePrivatePasses: false,
     minHuntingTier: 1
-}
-
-export function toHuntContextParams(state: HuntParametersState): HuntContextParameters{
-    return {
-        
-    }
 }
 
 type HuntParametersAction =

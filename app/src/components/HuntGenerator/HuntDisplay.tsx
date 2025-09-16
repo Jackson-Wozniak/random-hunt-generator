@@ -10,8 +10,9 @@ import { MapName } from "../../types/entities/Map";
 const FormStyling = {
     display: "flex", justifyContent: "center", alignItems: "center",
     fontFamily: "'Open Sans', sans-serif", color: "rgb(14, 14, 14)",
-    padding : "0px 30px 10px 30px", borderRadius: "5px", backdropFilter: "blur(10px)",
-    backgroundColor: "rgba(166, 166, 166, 0.2)", border: "1px solid rgba(147, 147, 147, 0.2)"
+    borderRadius: "5px", backdropFilter: "blur(10px)",
+    backgroundColor: "rgba(166, 166, 166, 0.2)", border: "1px solid rgba(147, 147, 147, 0.2)",
+    padding: 0, margin: 0
 }
 
 enum FormMode {
@@ -48,9 +49,9 @@ const HuntDisplay: React.FC<{setBackgroundUrl: (b: MapName) => void}> = ({setBac
 
     if(formMode == FormMode.DISPLAY_HUNT && generatedHunt != undefined){
         return (
-            <Dialog fullWidth={true} open={true} slotProps={{paper: {style: FormStyling}}}>
+            <Dialog fullWidth={true} maxWidth={"md"} open={true} slotProps={{paper: {style: FormStyling}}}>
                 <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Assigned Hunt</DialogTitle>
-                <DialogContent sx={{ m: 0, p: 0, width: "100%", maxHeight: "90vh", pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
+                <DialogContent sx={{ m: 0, p: 0, width: "100%", overflowY: "auto", maxHeight: "90vh", "& .MuiFormControl-root": { mt: 1 }}}>
                     <OutputDisplay hunt={generatedHunt}/>
                 </DialogContent>
             </Dialog>
