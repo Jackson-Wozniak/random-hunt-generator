@@ -39,3 +39,16 @@ export const HoneyBadger: Species = {
         [AnimalAction.SLEEP, ["08:00", "18:00"]]
     ])
 }
+
+export const EurasianWolverine: Species = {
+    name: SpeciesName.EURASIAN_WOLVERINE,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 3,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []],
+        [AnimalAction.SLEEP, []]
+    ])
+}

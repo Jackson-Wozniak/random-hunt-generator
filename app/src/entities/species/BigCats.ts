@@ -14,3 +14,16 @@ export const Lion: Species = {
         [AnimalAction.FEED, ["03:00", "15:00"]]
     ])
 }
+
+export const NorthernLynx: Species = {
+    name: SpeciesName.NORTHERN_LYNX,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 3,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.SLEEP, []],
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []]
+    ])
+}

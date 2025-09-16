@@ -131,6 +131,19 @@ export const WesternMoose: Species = {
     ])
 }
 
+export const EurasianMoose: Species = {
+    name: SpeciesName.EURASIAN_MOOSE,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 6,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []],
+        [AnimalAction.SLEEP, []]
+    ])
+}
+
 export const WhitetailDeer: Species = {
     name: SpeciesName.WHITETAIL_DEER,
     primaryHabitats: [],
@@ -141,5 +154,18 @@ export const WhitetailDeer: Species = {
         [AnimalAction.DRINK, ["00:00", "11:00"]],
         [AnimalAction.FEED, ["07:00", "19:00"]],
         [AnimalAction.SLEEP, ["02:00", "15:00"]]
+    ])
+}
+
+export const MountainReindeer: Species = {
+    name: SpeciesName.MOUNTAIN_REINDEER,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []],
+        [AnimalAction.SLEEP, []]
     ])
 }

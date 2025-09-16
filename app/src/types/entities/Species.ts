@@ -55,7 +55,12 @@ export enum SpeciesName {
     KODIAK_BEAR = "Kodiak Bear",
     
     HELMETED_GUINEAFOWL = "Helmeted Guineafowl",
-    SPOTTED_HYENA = "Spotted Hyena"
+    SPOTTED_HYENA = "Spotted Hyena",
+    EURASIAN_MOOSE = "Eurasian Moose",
+    EURASIAN_WOLVERINE = "Eurasian Wolverine",
+    MOUNTAIN_REINDEER = "Mountain Reindeer",
+    NORTHERN_LYNX = "Northern Lynx",
+    ARTIC_FOX = "Artic Fox"
 }
 
 export enum Family {
