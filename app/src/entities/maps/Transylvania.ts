@@ -148,7 +148,7 @@ export const LaleleField: Region = {
 }
 
 export const MeadowsOfFluture: Region = {
-    name: "MeadowsOfFluture",
+    name: "Meadows Of Fluture",
     biome: Biome.MOUNTAINS,
     hasCabin: false,
     isPrivatePass: false,

@@ -56,7 +56,7 @@ export const LehtoSwamps: Region = {
 }
 
 export const VaaraHighlands: Region = {
-    name: "VaaraHighlands",
+    name: "Vaara Highlands",
     biome: Biome.HIGHLAND_FOREST,
     hasCabin: false,
     isPrivatePass: false,
@@ -71,7 +71,7 @@ export const VaaraHighlands: Region = {
 }
 
 export const TarunoGrounds: Region = {
-    name: "TarunoGrounds",
+    name: "Taruno Grounds",
     biome: Biome.HIGHLAND_FOREST,
     hasCabin: false,
     isPrivatePass: false,
@@ -99,7 +99,7 @@ export const SaarakeWoods: Region = {
 }
 
 export const TunturiHills: Region = {
-    name: "TunturiHills",
+    name: "Tunturi Hills",
     biome: Biome.HIGHLANDS,
     hasCabin: false,
     isPrivatePass: false,

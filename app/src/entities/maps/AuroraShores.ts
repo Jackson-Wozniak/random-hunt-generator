@@ -33,7 +33,7 @@ export const ShalaskaPlains: Region = {
 }
 
 export const PlymbaltRange: Region = {
-    name: "PlymbaltRange",
+    name: "Plymbalt Range",
     biome: Biome.HIGHLANDS,
     hasCabin: false,
     isPrivatePass: false,
@@ -58,7 +58,7 @@ export const AntlerHighlands: Region = {
 }
 
 export const PointWritter: Region = {
-    name: "PointWritter",
+    name: "Point Writter",
     biome: Biome.MOUNTAINS,
     hasCabin: false,
     isPrivatePass: false,

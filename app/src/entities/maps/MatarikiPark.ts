@@ -21,7 +21,7 @@ export const RotoHoariForest: Region = {
 }
 
 export const ManaNuiHills: Region = {
-    name: "ManaNuiHills",
+    name: "Mana Nui Hills",
     biome: Biome.HIGHLANDS,
     hasCabin: true,
     isPrivatePass: false,
@@ -61,7 +61,7 @@ export const PuiaMoeRise: Region = {
 }
 
 export const OkiokingaHills: Region = {
-    name: "OkiokingaHills",
+    name: "Okiokinga Hills",
     biome: Biome.HIGHLANDS,
     hasCabin: true,
     isPrivatePass: false,
@@ -76,7 +76,7 @@ export const OkiokingaHills: Region = {
 }
 
 export const ArohaMeadows: Region = {
-    name: "ArohaMeadows",
+    name: "Aroha Meadows",
     biome: Biome.GRASSLAND,
     hasCabin: true,
     isPrivatePass: false,

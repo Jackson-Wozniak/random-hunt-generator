@@ -22,7 +22,7 @@ export const OngewoonTops: Region = {
 }
 
 export const BuffaloExpanse: Region = {
-    name: "BuffaloExpanse",
+    name: "Buffalo Expanse",
     biome: Biome.HIGHLANDS,
     hasCabin: true,
     isPrivatePass: false,
@@ -34,7 +34,7 @@ export const BuffaloExpanse: Region = {
 }
 
 export const DrearySavanna: Region = {
-    name: "DrearySavanna",
+    name: "Dreary Savanna",
     biome: Biome.SAVANNA,
     hasCabin: true,
     isPrivatePass: false,
@@ -73,7 +73,7 @@ export const ScorchedBarrens: Region = {
 }
 
 export const WhisperingFlats: Region = {
-    name: "WhisperingFlats",
+    name: "Whispering Flats",
     biome: Biome.SAVANNA,
     hasCabin: false,
     isPrivatePass: false,
