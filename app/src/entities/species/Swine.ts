@@ -26,3 +26,16 @@ export const WildBoar: Species = {
         [AnimalAction.SLEEP, ["02:00", "15:00"]]
     ])
 }
+
+export const FeralPig: Species = {
+    name: SpeciesName.FERAL_PIG,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.SLEEP, []],
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []]
+    ])
+}

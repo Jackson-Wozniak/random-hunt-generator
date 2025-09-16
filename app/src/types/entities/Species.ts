@@ -60,7 +60,13 @@ export enum SpeciesName {
     EURASIAN_WOLVERINE = "Eurasian Wolverine",
     MOUNTAIN_REINDEER = "Mountain Reindeer",
     NORTHERN_LYNX = "Northern Lynx",
-    ARTIC_FOX = "Artic Fox"
+    ARTIC_FOX = "Artic Fox",
+
+    FERAL_GOAT = "Feral Goat",
+    FERAL_PIG = "Feral Pig",
+    HIMALAYAN_TAHR = "Himalayan Tahr",
+    SIKA_DEER = "Sika Deer",
+    SAMBAR_DEER = "Sambar Deer"
 }
 
 export enum Family {

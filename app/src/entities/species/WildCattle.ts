@@ -144,3 +144,29 @@ export const WoodBison: Species = {
         [AnimalAction.FEED, ["05:00", "17:00"]]
     ])
 }
+
+export const HimalayanTahr: Species = {
+    name: SpeciesName.HIMALAYAN_TAHR,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 6,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.SLEEP, []],
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []]
+    ])
+}
+
+export const FeralGoat: Species = {
+    name: SpeciesName.FERAL_GOAT,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.SLEEP, []],
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []]
+    ])
+}

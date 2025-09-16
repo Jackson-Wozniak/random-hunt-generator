@@ -169,3 +169,29 @@ export const MountainReindeer: Species = {
         [AnimalAction.SLEEP, []]
     ])
 }
+
+export const SikaDeer: Species = {
+    name: SpeciesName.SIKA_DEER,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []],
+        [AnimalAction.SLEEP, []]
+    ])
+}
+
+export const SambarDeer: Species = {
+    name: SpeciesName.SAMBAR_DEER,
+    primaryHabitats: [],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        [AnimalAction.DRINK, []],
+        [AnimalAction.FEED, []],
+        [AnimalAction.SLEEP, []]
+    ])
+}
