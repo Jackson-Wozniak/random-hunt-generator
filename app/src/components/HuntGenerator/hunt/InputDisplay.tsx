@@ -80,7 +80,10 @@ const InputDisplay: React.FC<{handleSubmit: (state: HuntParametersState) => void
                         >
                             {[1, 2, 3, 4, 5, 6].map((num) => (
                                 <ToggleButton fullWidth={true} sx={{fontSize: "1.15rem"}} 
-                                    key={num} value={num}>{num}</ToggleButton>
+                                    key={num} value={num}
+                                    selected={huntParametersState.minHuntingTier != null &&
+                                        num <= huntParametersState.minHuntingTier}
+                                >{num}</ToggleButton>
                             ))}
                         </ToggleButtonGroup>
                     </FormControl>

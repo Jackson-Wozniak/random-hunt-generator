@@ -35,7 +35,7 @@ export const HuntingStories: Story[] = [
   },
   {
     backstory: `Farmers in the outskirts have been reporting crop damage. Tracks suggest a small group of {species} have been feeding on their fields under the cover of dusk. The community has asked for population control before planting season is ruined.`,
-    assignment: `Harvest 2 mature {species}, preferably males, during evening hours.`
+    assignment: `Harvest 2 mature {species}, preferably males.`
   },
   {
     backstory: `A rare albino {species} has been sighted in the area. Hunters are forbidden to harm it, but its presence indicates a healthy local herd. Your task is to carefully thin the herd without disturbing the rare animal.`,
