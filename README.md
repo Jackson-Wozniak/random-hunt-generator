@@ -24,7 +24,7 @@
     <li><a href="#overview">Overview</a></li>
     <li><a href="#hunt-generation">Hunt Generation</a></li>
     <li><a href="#credits">Credits</a></li>
-    <li><a href="#local-dev">Local Deployment</a></li>
+    <li><a href="#local-deployment">Local Deployment</a></li>
 </ol>    
 
 <br/> 
