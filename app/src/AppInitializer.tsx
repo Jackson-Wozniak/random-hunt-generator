@@ -19,7 +19,7 @@ const AppInitializer: React.FC = () => {
 
 	return (
 		<ThemeProvider theme={AppTheme(displayType)}>
-            <BrowserRouter>
+            <BrowserRouter basename="/random-hunt-generator/">
                 <Routes>
                     <Route index element={<Page component={<HunteGeneratorPage/>} />} />
                 </Routes>
