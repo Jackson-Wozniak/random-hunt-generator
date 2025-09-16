@@ -29,4 +29,32 @@ export const HuntingStories: Story[] = [
     backstory: `An outbreak of disease among {species} has caused concern in the nearby plains. Immediate action is required to prevent further spread and protect other wildlife.`,
     assignment: `Shoot 2 adult males, 1 mature female, and 1 young {species}.`
   },
+  {
+    backstory: `A violent thunderstorm swept through the valley last night, leaving the area unsettled. Several {species} were spotted displaced near the hunting grounds, moving nervously as if driven from shelter. Local rangers want to know how many survived the chaos.`,
+    assignment: `Harvest 3 adult {species} to assess the herd’s stability.`
+  },
+  {
+    backstory: `Farmers in the outskirts have been reporting crop damage. Tracks suggest a small group of {species} have been feeding on their fields under the cover of dusk. The community has asked for population control before planting season is ruined.`,
+    assignment: `Harvest 2 mature {species}, preferably males, during evening hours.`
+  },
+  {
+    backstory: `A rare albino {species} has been sighted in the area. Hunters are forbidden to harm it, but its presence indicates a healthy local herd. Your task is to carefully thin the herd without disturbing the rare animal.`,
+    assignment: `Take down 2 young {species} without alarming the rest of the group.`
+  },
+  {
+    backstory: `Poachers left several carcasses of {species} behind last season, destabilizing the balance of the herd. Rangers believe population management is needed to restore numbers in a controlled way.`,
+    assignment: `Harvest 4 {species}, at least 2 must be adults.`
+  },
+  {
+    backstory: `Hunters whisper of a particularly aggressive {species} roaming the lowlands. It has damaged fences and even charged a lone hiker. Locals want reassurance that the population is under control.`,
+    assignment: `Locate and harvest 1 mature male {species}.`
+  },
+  {
+    backstory: `Migration season is underway, and herds of {species} are passing through the area. A temporary permit has been granted to manage numbers before they move further south.`,
+    assignment: `Harvest 5 {species} of any age.`
+  },
+  {
+    backstory: `A disease has spread through a pocket of the {species} population. Rangers have confirmed several weak individuals. To contain it, hunters are asked to remove vulnerable animals before the illness spreads.`,
+    assignment: `Cull 2 young {species} showing signs of frailty.`
+  }
 ];
