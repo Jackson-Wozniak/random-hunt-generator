@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import Header from './Header';
 
 const Page: React.FC<{
     component: React.ReactNode,

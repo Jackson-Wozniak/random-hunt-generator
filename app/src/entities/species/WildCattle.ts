@@ -1,7 +1,6 @@
 import { Biome } from "../../types/entities/Region";
 import { AnimalAction, SpeciesName, type Species } from "../../types/entities/Species";
 
-
 export const BighornSheep: Species = {
     name: SpeciesName.BIGHORN_SHEEP,
     primaryHabitats: [Biome.MOUNTAINS],

@@ -6,7 +6,7 @@ export const AppTheme = (displayType: 'desktop' | 'mobile' = 'desktop',
 ): Theme => createTheme({
     palette : {
         primary: {
-            main: "#0070c0",
+            main: "#d03801ff",
             contrastText: "#ffffffff"
         },
         secondary: {

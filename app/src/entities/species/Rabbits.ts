@@ -1,7 +1,6 @@
 import { Biome } from "../../types/entities/Region";
 import { AnimalAction, type Species, SpeciesName } from "../../types/entities/Species";
 
-
 export const EuropeanHare: Species = {
     name: SpeciesName.EUROPEAN_HARE,
     primaryHabitats: [Biome.GRASSLAND],

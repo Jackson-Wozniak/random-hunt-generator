@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Dialog, DialogContent, DialogTitle, IconButton, Paper, Typography, useTheme } from "@mui/material";
+import { Box, CircularProgress, Dialog, DialogContent, DialogTitle, IconButton, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
 import type { HuntParametersState } from "./hunt/HuntParametersDispatch";
 import { generateHunt } from "../../engine/HuntEngine";

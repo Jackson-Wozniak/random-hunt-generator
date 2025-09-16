@@ -2,11 +2,6 @@ import type { Map } from "./entities/Map";
 import type { Region } from "./entities/Region";
 import type { Species } from "./entities/Species";
 
-
-export interface HuntContextParameters {
-
-}
-
 export interface Story {
     backstory: string,
     assignment: string

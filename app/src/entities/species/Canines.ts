@@ -1,7 +1,6 @@
 import { Biome } from "../../types/entities/Region";
 import { SpeciesName, type Species } from "../../types/entities/Species";
 
-
 export const GoldenJackal: Species = {
     name: SpeciesName.GOLDEN_JACKAL,
     primaryHabitats: [Biome.LOWLAND_FOREST],

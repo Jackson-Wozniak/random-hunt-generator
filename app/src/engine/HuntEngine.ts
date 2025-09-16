@@ -1,22 +1,18 @@
-import { Mms } from "@mui/icons-material";
 import { GameType, HuntType, type HuntParametersState } from "../components/HuntGenerator/hunt/HuntParametersDispatch";
 import { Maps } from "../entities/Collections";
-import { WhitetailDeer } from "../entities/species/Deer";
 import { HuntingRules } from "../entities/text/Rules";
 import { HuntingStories } from "../entities/text/Stories";
 import type { Map } from "../types/entities/Map";
 import type { Region } from "../types/entities/Region";
-import type { Hunt, Story } from "../types/HuntTypes";
+import type { Hunt } from "../types/HuntTypes";
 import type { Species } from "../types/entities/Species";
 
 export function generateHunt(parameters: HuntParametersState): Hunt{
     const map = getRandomMap(parameters.includeDLC);
     const region = getRandomRegion(map, parameters.includePrivatePasses);
-    const species = (!region.species || region.species.length === 0)
-        ? [WhitetailDeer]
-        : parameters.huntType === HuntType.SIMPLE
-            ? [...region.species]
-            : [getRandomSpecies(region, parameters.gameType)];
+    const species = parameters.huntType === HuntType.STORY_BASED
+        ? [getRandomSpecies(region, parameters.gameType)]
+        : [...region.species];
     const story = parameters.huntType == HuntType.STORY_BASED ? getRandomStory() : undefined;
     const rules = parameters.huntType == HuntType.STORY_BASED ? getRandomRules() : undefined;
 
@@ -57,14 +53,19 @@ function getRandomSpecies(region: Region, gameType: GameType){
     if(gameType != GameType.ALL_GAME){
         const isBigGame: boolean = gameType == GameType.BIG_GAME;
         if(isBigGame){
-            species = species.filter(s => s.huntingTier < 4);
-        }else{
             species = species.filter(s => s.huntingTier > 3);
+        }else{
+            species = species.filter(s => s.huntingTier < 4);
         }
     }
-    const random: number = getRandom(0, region.species.length);
 
-    return region.species[random];
+    if (species.length === 0) {
+        return region.species[getRandom(0, region.species.length)];
+    }
+    
+    const random: number = getRandom(0, species.length);
+
+    return species[random];
 }
 
 function getRandomRules(){

@@ -7,13 +7,9 @@ import HunteGeneratorPage from "./components/HuntGenerator/HuntGeneratorPage";
 
 const AppInitializer: React.FC = () => {
     const [displayType, setDisplayType] = useState<'desktop' | 'mobile'>();
-    const [width, setWidth] = useState<number>(window.innerWidth);
-    const [height, setHeight] = useState<number>(window.innerHeight);
 
     useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth);
-            setHeight(window.innerHeight);
             setDisplayType(window.innerWidth < window.innerHeight ? 'mobile' : 'desktop');
         }
         handleResize();

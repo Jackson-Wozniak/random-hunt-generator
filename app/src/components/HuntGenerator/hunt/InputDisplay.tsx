@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, InputLabel, MenuItem, OutlinedInput, Radio, RadioGroup, Select, Slider, TextField, ToggleButton, ToggleButtonGroup, useTheme } from "@mui/material";
+import { Box, Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, InputLabel, MenuItem, OutlinedInput, Select, ToggleButton, ToggleButtonGroup, useTheme } from "@mui/material";
 import { CenteredFullWindow } from "../../../theme/Shared";
 import { GameType, HuntParametersReducer, HuntType, InitialHuntParametersState, type HuntParametersState } from "./HuntParametersDispatch";
 import { useReducer } from "react";
@@ -53,8 +53,7 @@ const InputDisplay: React.FC<{handleSubmit: (state: HuntParametersState) => void
                             input={<OutlinedInput label="Hunt Type" />}
                             onChange={(e) => HuntParametersDispatch({type: "OnChangeHuntType", payload: e.target.value})}
                         >
-                            <MenuItem value={HuntType.SIMPLE}>{HuntType.SIMPLE}</MenuItem>
-                            <MenuItem value={HuntType.TARGET_SPECIES}>{HuntType.TARGET_SPECIES}</MenuItem>
+                            <MenuItem value={HuntType.OPEN_HUNT}>{HuntType.OPEN_HUNT}</MenuItem>
                             <MenuItem value={HuntType.STORY_BASED}>{HuntType.STORY_BASED}</MenuItem>
                         </Select>
                     </FormControl>
@@ -69,7 +68,7 @@ const InputDisplay: React.FC<{handleSubmit: (state: HuntParametersState) => void
                         label="Include Private Pass Regions"
                     />
                     <FormControl component="fieldset" sx={{ width: "100%" }}>
-                        <FormLabel component="legend">Minimum Hunting Tier</FormLabel>
+                        <FormLabel component="legend">Included Targets</FormLabel>
                         <ToggleButtonGroup
                           value={huntParametersState.gameType}
                           exclusive

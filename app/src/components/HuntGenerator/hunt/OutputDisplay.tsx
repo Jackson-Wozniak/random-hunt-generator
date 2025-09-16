@@ -1,4 +1,4 @@
-import { Box, TextField, useTheme } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import { CenteredFullWindow } from "../../../theme/Shared";
 import type { Hunt } from "../../../types/HuntTypes";
 import ForestIcon from '@mui/icons-material/Forest';
@@ -9,7 +9,6 @@ import WorkIcon from '@mui/icons-material/Work';
 import GavelIcon from '@mui/icons-material/Gavel';
 
 const OutputDisplay: React.FC<{hunt: Hunt}> = ({hunt}) => {
-    const theme = useTheme();
 
     return (
         <Box sx={CenteredFullWindow("column")}>

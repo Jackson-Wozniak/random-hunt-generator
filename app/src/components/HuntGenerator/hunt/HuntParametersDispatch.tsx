@@ -1,8 +1,6 @@
-import type { HuntContextParameters } from "../../../types/HuntTypes";
 
 export enum HuntType {
-    SIMPLE = "Simple",
-    TARGET_SPECIES = "Target a Species",
+    OPEN_HUNT = "Open Hunt",
     STORY_BASED = "Story Based"
 }
 

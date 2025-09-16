@@ -1,4 +1,3 @@
-import { useTheme } from "@mui/material/styles";
 import ContentContainer from "../Shared/ContentContainer";
 import Box from "@mui/material/Box";
 import HuntDisplay from "./HuntDisplay";
@@ -13,7 +12,6 @@ import MatarikiParkImage from '../../assets/backgrounds/MatarikiPark.png';
 import LogoImage from '../../assets/backgrounds/logo.png';
 
 const HunteGeneratorPage: React.FC<{}> = ({}) => {
-    const theme = useTheme();
 
     const [backgroundUrl, setBackgroundUrl] = useState<string>(LogoImage);
 

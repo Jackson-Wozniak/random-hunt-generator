@@ -1,11 +1,11 @@
 import { MapName, type Map } from "../../types/entities/Map";
 import { Biome, type Region } from "../../types/entities/Region";
-import { AmericanBadger, EurasianBadger } from "../species/Badgers";
-import { AmericanBlackBear, BrownBear } from "../species/Bears";
+import { EurasianBadger } from "../species/Badgers";
+import { BrownBear } from "../species/Bears";
 import { GoldenJackal, GrayWolf, RedFox } from "../species/Canines";
-import { MuleDeer, WhitetailDeer, RockyMountainElk, WesternMoose, RoeDeer, FallowDeer, RedDeer } from "../species/Deer";
+import { RoeDeer, FallowDeer, RedDeer } from "../species/Deer";
 import { Pheasant } from "../species/GroundBirds";
-import { EuropeanHare, SnowshoeHare } from "../species/Rabbits";
+import { EuropeanHare } from "../species/Rabbits";
 import { WildBoar } from "../species/Swine";
 import { GreylagGoose, WildDuck } from "../species/WaterBirds";
 import { Chamois, Mouflon } from "../species/WildCattle";
