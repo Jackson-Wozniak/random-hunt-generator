@@ -52,7 +52,10 @@ export enum SpeciesName {
 
     AMERICAN_BLACK_BEAR = "American Black Bear",
     BROWN_BEAR = "Brown Bear",
-    KODIAK_BEAR = "Kodiak Bear"
+    KODIAK_BEAR = "Kodiak Bear",
+    
+    HELMETED_GUINEAFOWL = "Helmeted Guineafowl",
+    SPOTTED_HYENA = "Spotted Hyena"
 }
 
 export enum Family {

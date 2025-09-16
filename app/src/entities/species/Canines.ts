@@ -34,3 +34,14 @@ export const RedFox: Species = {
         
     ])
 }
+
+export const SpottedHyena: Species = {
+    name: SpeciesName.SPOTTED_HYENA,
+    primaryHabitats: [Biome.HIGHLANDS],
+    secondaryHabitats: [],
+    huntingTier: 5,
+    weightRanges: [],
+    lifeCycle: new Map([
+        
+    ])
+}

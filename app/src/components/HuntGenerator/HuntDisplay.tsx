@@ -48,9 +48,9 @@ const HuntDisplay: React.FC<{setBackgroundUrl: (b: MapName) => void}> = ({setBac
 
     if(formMode == FormMode.DISPLAY_HUNT && generatedHunt != undefined){
         return (
-            <Dialog fullWidth={true} maxWidth={"sm"} open={true} slotProps={{paper: {style: FormStyling}}}>
+            <Dialog fullWidth={true} open={true} slotProps={{paper: {style: FormStyling}}}>
                 <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Assigned Hunt</DialogTitle>
-                <DialogContent sx={{ pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
+                <DialogContent sx={{ m: 0, p: 0, width: "100%", maxHeight: "90vh", pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
                     <OutputDisplay hunt={generatedHunt}/>
                 </DialogContent>
             </Dialog>
