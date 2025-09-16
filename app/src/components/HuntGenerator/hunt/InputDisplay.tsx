@@ -1,6 +1,6 @@
 import { Box, Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, InputLabel, MenuItem, OutlinedInput, Radio, RadioGroup, Select, Slider, TextField, ToggleButton, ToggleButtonGroup, useTheme } from "@mui/material";
 import { CenteredFullWindow } from "../../../theme/Shared";
-import { HuntParametersReducer, HuntType, InitialHuntParametersState, type HuntParametersState } from "./HuntParametersDispatch";
+import { GameType, HuntParametersReducer, HuntType, InitialHuntParametersState, type HuntParametersState } from "./HuntParametersDispatch";
 import { useReducer } from "react";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import SearchIcon from '@mui/icons-material/Search';
@@ -68,23 +68,21 @@ const InputDisplay: React.FC<{handleSubmit: (state: HuntParametersState) => void
                             onChange={() => HuntParametersDispatch({type: "OnSwitchIncludePrivatePasses"})}/>}
                         label="Include Private Pass Regions"
                     />
-                    <FormControl component="fieldset" sx={{width: "100%"}}>
+                    <FormControl component="fieldset" sx={{ width: "100%" }}>
                         <FormLabel component="legend">Minimum Hunting Tier</FormLabel>
                         <ToggleButtonGroup
-                            value={huntParametersState.minHuntingTier} exclusive
-                            sx={{
-                                display: "flex", justifyContent: "space-between", width: "100%"
-                            }}
-                            onChange={(_, val) => 
-                                HuntParametersDispatch({type: "OnChangeMinHuntingTier", payload: val})}
+                          value={huntParametersState.gameType}
+                          exclusive
+                          fullWidth
+                          onChange={(_, val) =>
+                            HuntParametersDispatch({ type: "OnChangeGameType", payload: val })
+                          }
                         >
-                            {[1, 2, 3, 4, 5, 6].map((num) => (
-                                <ToggleButton fullWidth={true} sx={{fontSize: "1.15rem"}} 
-                                    key={num} value={num}
-                                    selected={huntParametersState.minHuntingTier != null &&
-                                        num <= huntParametersState.minHuntingTier}
-                                >{num}</ToggleButton>
-                            ))}
+                          {Object.values(GameType).map((type, index) => (
+                            <ToggleButton key={index} value={type} sx={{ fontSize: "1.15rem" }}>
+                              {type}
+                            </ToggleButton>
+                          ))}
                         </ToggleButtonGroup>
                     </FormControl>
                 </FormGroup>
