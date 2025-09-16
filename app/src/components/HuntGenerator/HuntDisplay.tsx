@@ -64,7 +64,7 @@ const HuntDisplay: React.FC<{setBackgroundUrl: (b: MapName | undefined) => void}
                             position: "absolute", left: 8, color: theme.palette.text.primary
                         }}
                     ><ArrowBackIcon fontSize="large"/></IconButton>
-                    <Typography variant="h4" sx={{color: theme.palette.primary.contrastText}}>Assigned Hunt</Typography>
+                    <Typography variant="h4" component="span" sx={{color: theme.palette.primary.contrastText}}>Assigned Hunt</Typography>
                 </DialogTitle>
                 <DialogContent sx={{ m: 0, p: 0, width: "100%", overflowY: "auto", maxHeight: "90vh", "& .MuiFormControl-root": { mt: 1 }}}>
                     <OutputDisplay hunt={generatedHunt}/>
