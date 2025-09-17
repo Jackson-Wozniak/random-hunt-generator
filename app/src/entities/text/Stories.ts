@@ -56,5 +56,69 @@ export const HuntingStories: Story[] = [
   {
     backstory: `A disease has spread through a pocket of the {species} population. Rangers have confirmed several weak individuals. To contain it, hunters are asked to remove vulnerable animals before the illness spreads.`,
     assignment: `Cull 2 young {species} showing signs of frailty.`
+  },
+  {
+    backstory: `A local restaraunt has decided to expand their menu. They believe {species} meat may enhance some of their new recipes. Be careful though, they're picky about what products they sell!`,
+    assignment: `Harvest 4 adult {species}, each having a 3-star rating or higher`
+  },
+  {
+    backstory: `A mining company nearby has raised concerns: {species} are wandering into their work zones, creating hazards for both workers and animals. Authorities have authorized a controlled cull to ensure safety.`,
+    assignment: `Cull 3 adult {species}, at least one female.`
+  },
+  {
+    backstory: `A cultural festival is approaching in the village, and hunters have been asked to provide meat as part of the traditional feast. The organizers want quality and precision, not reckless overhunting.`,
+    assignment: `Harvest 3 adult {species} of at least 2-star rating.`
+  },
+  {
+    backstory: `A new steakhouse in town is building a reputation for exotic flavors. They’ve requested a delivery of {species} meat, but only from healthy, well-fed animals to ensure tenderness.`,
+    assignment: `Harvest 3 adult {species}, each at least 3-stars in quality.`
+  },
+  {
+    backstory: `A family-owned smokehouse wants to test a new recipe featuring {species} jerky. They need lean cuts, so younger animals are preferred over bulkier adults.`,
+    assignment: `Cull 2 young {species} and 1 adult female.`
+  },
+  {
+    backstory: `A five-star restaurant has advertised a limited “seasonal game platter.” They require prime {species} meat with no visible damage, so precision shots are critical.`,
+    assignment: `Harvest 2 adult males {species} with clean lung or heart shots only.`
+  },
+  {
+    backstory: `A traveling food festival has arrived, and one vendor wants to feature {species} stew as their headline dish. They’re asking for a bulk supply before the event begins.`,
+    assignment: `Harvest 5 {species} of any age.`
+  },
+  {
+    backstory: `A famous butcher has been experimenting with dry-aging {species} cuts for high-paying clients. To achieve the right balance, he requires mature animals only.`,
+    assignment: `Harvest 2 mature males and 1 mature female {species}.`
+  },
+  {
+    backstory: `The local brewery is pairing a new ale with wild game sliders. They’ve contracted you to deliver medium-sized {species}, but rangers insist on keeping the herd balanced.`,
+    assignment: `Harvest 2 adult females and 1 young male {species}.`
+  },
+  {
+    backstory: `A seaside restaurant is introducing a “wild surf-and-turf” menu. They’re selective about portions and want smaller, tender cuts rather than bulky game.`,
+    assignment: `Cull 3 young {species} under 3 years of age.`
+  },
+  {
+    backstory: `A renowned chef from the capital has arrived, seeking only the most exquisite cuts of {species}. He insists on perfect specimens for a press event.`,
+    assignment: `Harvest 2 adult males {species}, both 4 stars or higher.`
+  },
+  {
+    backstory: `A rustic tavern is preparing for a seasonal feast. Tradition calls for meat from female {species}, as locals believe it gives a sweeter flavor.`,
+    assignment: `Harvest 3 adult female {species}.`
+  },
+  {
+    backstory: `An avant-garde restaurant is experimenting with charcuterie boards featuring rare wild meats. They need small but high-quality cuts without overharvesting.`,
+    assignment: `Harvest 2 young {species}, each at least 2 stars in quality.`
+  },
+  {
+    backstory: `A new family has moved into the local village, and have become notorious for avoiding commercialized animal products. They're a big family, so they demand plenty of wild game meat`,
+    assignment: `Harvest 10 {species} of any age. Expect another order from them soon!`
+  },
+  {
+    backstory: `The local research lab has found a peculiar trait in the local {species} population, but they do not want to go hunting themselves. Please give them your help and provide a range of animals for their studies!`,
+    assignment: `Shoot 6 total {species}. Harvest 2 of each age (young, adult, and mature), 1 of each group being a male & 1 being a female.`
+  },
+  {
+    backstory: `You in-laws are on a trip nearby, and you have invited them for dinner, where you will be serving your special {species} stew. Make sure it's high quality!`,
+    assignment: `Harvest 1 large adult male {species}, of at least 3-stars.`
   }
 ];
