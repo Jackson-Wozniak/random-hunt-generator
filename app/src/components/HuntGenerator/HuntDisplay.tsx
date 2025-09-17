@@ -7,6 +7,8 @@ import InputDisplay from "./hunt/InputDisplay";
 import OutputDisplay from "./hunt/OutputDisplay";
 import { MapName } from "../../types/entities/Map";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Link } from "react-router-dom";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const FormStyling = {
     display: "flex", justifyContent: "center", alignItems: "center",
@@ -74,12 +76,20 @@ const HuntDisplay: React.FC<{setBackgroundUrl: (b: MapName | undefined) => void}
     }
 
     return (
-        <Dialog fullWidth={true} maxWidth={"sm"} open={true} slotProps={{paper: {sx: FormStyling}}}>
-            <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Generate New Hunt</DialogTitle>
-            <DialogContent sx={{ pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
-                <InputDisplay handleSubmit={handleInput}/>
-            </DialogContent>
-        </Dialog>
+        <>
+            <IconButton sx={{width: "50px", height: "50px", position: "absolute", top: 0, right: 0, 
+                zIndex: "2000", color: "#0d1117", backgroundColor: "transparent"}}
+                component={Link}
+                to="https://github.com/Jackson-Wozniak/woth-hunt-generator"
+                target="_blank"
+            ><GitHubIcon/></IconButton>
+            <Dialog fullWidth={true} maxWidth={"sm"} open={true} slotProps={{paper: {sx: FormStyling}}}>
+                <DialogTitle variant="h4" sx={{color: theme.palette.primary.contrastText}}>Generate New Hunt</DialogTitle>
+                <DialogContent sx={{ pt: 3, "& .MuiFormControl-root": { mt: 1 }}}>
+                    <InputDisplay handleSubmit={handleInput}/>
+                </DialogContent>
+            </Dialog>
+        </>
     )
 }
 

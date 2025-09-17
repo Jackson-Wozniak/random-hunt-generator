@@ -13,6 +13,7 @@ const OutputDisplay: React.FC<{hunt: Hunt}> = ({hunt}) => {
     return (
         <Box sx={CenteredFullWindow("column")}>
             <TextField
+                multiline maxRows={2}
                 sx={{marginBottom: "20px", width: "75%"}}
                 label="Location"
                 value={hunt.region.name + ", " + hunt.map.name}
