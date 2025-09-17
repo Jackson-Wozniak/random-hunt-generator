@@ -45,6 +45,8 @@
 
 The properties found for Way of The Hunter is outlined [on the wiki](https://way-of-the-hunter.fandom.com/wiki)
 
+Further information on animal and region patterns was referenced from [the WOTH toolbox](https://codeaid.github.io/woth-toolbox/animals)
+
 <br/> 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
 
