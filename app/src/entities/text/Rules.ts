@@ -14,5 +14,9 @@ export const HuntingRules: Rules[] = [
   { restriction: "Hunting is only allowed during early morning hours in this area.", timeOfDay: "05:00 - 09:00" },
   { restriction: "Afternoon hunts are recommended due to animal activity patterns.", timeOfDay: "12:00 - 18:00" },
   { restriction: "Motorized vehicles have been prohibited by local officials.", timeOfDay: "No Restrictions"},
-  { restriction: "All campsites in the area have been booked. Sleep at campsites is prohibited", timeOfDay: "06:00 - 18:00"}
+  { restriction: "All campsites in the area have been booked. Sleep at campsites is prohibited", timeOfDay: "06:00 - 18:00"},
+  { restriction: "An elevated number of hikers have been noted in the area. Any hunters must shoot animals from a maximum of 200 meters.", timeOfDay: "No Restrictions"},
+  { restriction: "A search party has been deployed in the area. To ensure safety for all, hunting at night is strictly forbidden", timeOfDay: "18:00 - 06:00"},
+  { restriction: "A college field trip is scheduled for the following days. Motorized vehicles are prohibited as to not further disturb the local animal polpulations.", timeOfDay: "18:00 - 06:00"},
+  { restriction: "POSTED: Law enforcement officials are investigating break-ins during the early morning hours. Hunting is prohibited during this time until further notice.", timeOfDay: "10:00 - 20:00"}
 ];

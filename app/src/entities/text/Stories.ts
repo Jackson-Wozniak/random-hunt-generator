@@ -83,7 +83,7 @@ export const HuntingStories: Story[] = [
   },
   {
     backstory: `A traveling food festival has arrived, and one vendor wants to feature {species} stew as their headline dish. They’re asking for a bulk supply before the event begins.`,
-    assignment: `Harvest 5 {species} of any age.`
+    assignment: `Harvest 5 {species} of any age. An elevated number of hikers have been noted, so shots must be within 150 meters to ensure safety for all.`
   },
   {
     backstory: `A famous butcher has been experimenting with dry-aging {species} cuts for high-paying clients. To achieve the right balance, he requires mature animals only.`,
@@ -120,5 +120,21 @@ export const HuntingStories: Story[] = [
   {
     backstory: `You in-laws are on a trip nearby, and you have invited them for dinner, where you will be serving your special {species} stew. Make sure it's high quality!`,
     assignment: `Harvest 1 large adult male {species}, of at least 3-stars.`
+  },
+  {
+    backstory: `The regional museum has requested mounted trophies of {species} for their wildlife exhibit. Each specimen must be mature and aesthetically suitable for display.`,
+    assignment: `Harvest 2 mature males {species} for trophies, ensuring minimal damage to the antlers or horns.`
+  },
+  {
+    backstory: `An artisan collective wants {species} hides for drum-making. Only ethically taken animals are acceptable, and the hides must remain pristine for their crafts.`,
+    assignment: `Harvest 2 young {species} ethically, preserving the hide intact. To ensure the hides quality, shots must be taken from less than 100 meters.`
+  },
+  {
+    backstory: `A wealthy patron is collecting a personal trophy room of {species}. They desire mature specimens with fully developed features, without harming the hide or antlers.`,
+    assignment: `Harvest 2 mature male {species} as trophies.`
+  },
+  {
+    backstory: `A conservationist group is sponsoring a “sustainable craft” initiative, providing hides to local artisans. Hunters must cull responsibly, maintaining both hide and meat quality.`,
+    assignment: `Harvest 3 adult {species}, all ethically shot at under 200 meters to preserve both hide and meat.`
   }
 ];
